@@ -1,1 +1,322 @@
-# ecobot
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBot 2050 Presentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .slide {
+            display: none;
+            padding: 50px;
+            text-align: center;
+            height: 100vh;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .active {
+            display: block;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+            text-shadow: 0px 0px 12px rgba(76, 175, 80, 0.8);
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .split {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            gap: 50px;
+        }
+
+        .split div {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: #FBC02D;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        button {
+            background: #1E88E5;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 0 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+
+        button:hover {
+            background: #1565C0;
+            transform: scale(1.05);
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* EcoBot Prototype Styles */
+        .ecobot-container {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgba(76, 175, 80, 0.5);
+        }
+
+        .chat-box {
+            background: rgba(255, 255, 255, 0.1);
+            height: 200px;
+            overflow-y: auto;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .chat-message {
+            margin: 5px 0;
+        }
+
+        .bot {
+            color: #4CAF50;
+        }
+
+        .user {
+            color: #FBC02D;
+        }
+
+        input, .ecobot-container button {
+            margin: 8px 0;
+            padding: 8px;
+            width: 90%;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .ecobot-container button {
+            background: #1E88E5;
+            color: white;
+            cursor: pointer;
+        }
+
+        .ecobot-container button:hover {
+            background: #1565C0;
+        }
+
+        .eco-lens {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <h1>🌱 EcoBot 2050</h1>
+        <div class="content">
+            <p><span class="highlight">AI for Climate, Soil & Land Restoration</span></p>
+            <p>Revolutionizing environmental action through AI, visual analysis, and global collaboration.</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <h2>🌍 Global Pollution Crisis</h2>
+        <div class="split">
+            <div>
+                <h3>Air Pollution</h3>
+                <p>8.1M deaths/year</p>
+                <p>90% breathe unsafe air.</p>
+            </div>
+            <div>
+                <h3>Water Pollution</h3>
+                <p>1.8B rely on contaminated water.</p>
+            </div>
+            <div>
+                <h3>Soil Pollution</h3>
+                <p>40% degraded farmland</p>
+                <p>36–43B tons soil lost/year.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <h2>⚠️ Why Change is Urgent</h2>
+        <div class="content">
+            <p>Pollution is interconnected with deforestation, land misuse, and climate change.</p>
+            <p><span class="highlight">Without action, we risk irreversible ecological collapse by 2050.</span></p>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <h2>🔄 Problem vs Solution</h2>
+        <div class="split">
+            <div>
+                <h3>Problems</h3>
+                <ul>
+                    <li>Air: 8.1M deaths/year</li>
+                    <li>Water: 1.8B lack clean water</li>
+                    <li>Soil: 40% degraded land</li>
+                </ul>
+            </div>
+            <div>
+                <h3>EcoBot Solutions</h3>
+                <ul>
+                    <li>AI Green Belts to reduce emissions</li>
+                    <li>EcoLens for soil health analysis</li>
+                    <li>AI Carbon Belts for CO₂ absorption</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <h2>🤖 EcoBot Prototype</h2>
+        <div class="ecobot-container">
+            <h3>EcoBot 2050</h3>
+            <div class="chat-box" id="chat-box">
+                <div class="chat-message bot">🤖 EcoBot: Hello! Upload an image or ask for eco-tips.</div>
+            </div>
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+
+            <div class="eco-lens">
+                <p>EcoLens: Upload land/soil image</p>
+                <input type="file" id="image-upload" accept="image/*" onchange="analyzeImage()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <h2>🌎 Global Impact by 2050</h2>
+        <div class="split">
+            <div>
+                <p><strong>+30%</strong><br>Soil health improvement</p>
+            </div>
+            <div>
+                <p><strong>Millions</strong><br>tons of CO₂ captured</p>
+            </div>
+            <div>
+                <p><strong>100M+</strong><br>citizens engaged in eco-actions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-buttons">
+        <button onclick="prevSlide()">⬅ Previous</button>
+        <button onclick="nextSlide()">Next ➡</button>
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        const chatBox = document.getElementById("chat-box");
+
+        function sendMessage() {
+            const userInput = document.getElementById("user-input");
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage("user", "🧑 You: " + message);
+                userInput.value = "";
+                setTimeout(() => botResponse(message), 600);
+            }
+        }
+
+        function addMessage(type, text) {
+            const msg = document.createElement("div");
+            msg.classList.add("chat-message", type);
+            msg.innerHTML = text;
+            chatBox.appendChild(msg);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function botResponse(userText) {
+            let response = "I'm here to help!";
+            if (userText.toLowerCase().includes("pollution")) {
+                response = "Reduce air pollution by planting trees and using public transport.";
+            } else if (userText.toLowerCase().includes("soil")) {
+                response = "Add organic compost and avoid chemicals to improve soil health.";
+            } else if (userText.toLowerCase().includes("water")) {
+                response = "Conserve water, use filtration, and avoid dumping waste.";
+            } else if (userText.toLowerCase().includes("carbon")) {
+                response = "Join AI Carbon Belt projects to reduce CO₂ levels globally!";
+            } else {
+                response = "Try asking about pollution, soil, water, or carbon!";
+            }
+            addMessage("bot", "🤖 EcoBot: " + response);
+        }
+
+        function analyzeImage() {
+            addMessage("bot", "🤖 EcoBot: Analyzing image... (EcoLens Simulation)");
+            setTimeout(() => {
+                addMessage("bot", "🌱 EcoBot: Soil appears degraded. Suggesting: Biochar, reforestation, and carbon belt planting.");
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
