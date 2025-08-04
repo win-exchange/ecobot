@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBot 2050 Presentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .slide {
+            display: none;
+            padding: 60px;
+            text-align: center;
+            height: 100vh;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .active {
+            display: block;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+            text-shadow: 0px 0px 12px rgba(76, 175, 80, 0.8);
+            margin-bottom: 20px;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .split {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            gap: 50px;
+        }
+
+        .split div {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: #FBC02D;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        button {
+            background: #1E88E5;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            margin: 0 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+
+        button:hover {
+            background: #1565C0;
+            transform: scale(1.05);
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: radial-gradient(rgba(76, 175, 80, 0.15) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .data-point {
+            font-size: 1.5rem;
+            color: #FBC02D;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <h1>🌱 EcoBot 2050</h1>
+        <div class="content">
+            <p><span class="highlight">AI for Climate, Soil & Land Restoration</span></p>
+            <p>Revolutionizing environmental action with futuristic technology, visual analysis, and global collaboration.</p>
+        </div>
+    </div>
+
+    <!-- Slide 2: Pollution Stats -->
+    <div class="slide">
+        <h2>🌍 Global Pollution Crisis</h2>
+        <div class="split">
+            <div>
+                <h3>Air Pollution</h3>
+                <p class="data-point">8.1M deaths/year</p>
+                <p>90% of people breathe unsafe air.</p>
+            </div>
+            <div>
+                <h3>Water Pollution</h3>
+                <p class="data-point">1.8B people</p>
+                <p>rely on contaminated water.</p>
+            </div>
+            <div>
+                <h3>Soil Pollution</h3>
+                <p class="data-point">40% degraded</p>
+                <p>36–43B tons of soil lost yearly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Why Change -->
+    <div class="slide">
+        <h2>⚠️ Why Change is Urgent</h2>
+        <div class="content">
+            <p>Pollution is interconnected with deforestation, land misuse, and climate change.</p>
+            <p><span class="highlight">Without action, we risk irreversible ecological collapse by 2050.</span></p>
+        </div>
+    </div>
+
+    <!-- Slide 4: Problem vs Solution -->
+    <div class="slide">
+        <h2>🔄 Problem vs Solution</h2>
+        <div class="split">
+            <div>
+                <h3>Problems</h3>
+                <ul>
+                    <li>Air: 8.1M deaths</li>
+                    <li>Water: 1.8B unsafe sources</li>
+                    <li>Soil: 40% degraded</li>
+                    <li>Biodiversity loss</li>
+                </ul>
+            </div>
+            <div>
+                <h3>EcoBot Solutions</h3>
+                <ul>
+                    <li>AI Green Belts reduce emissions</li>
+                    <li>EcoLens analyzes soil and water</li>
+                    <li>AI Carbon Belts restore land</li>
+                    <li>Eco-Challenges engage communities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: EcoBot Features -->
+    <div class="slide">
+        <h2>🤖 EcoBot 2050 – Key Features</h2>
+        <div class="content">
+            <ul>
+                <li>AI Chatbot: Personalized eco-actions.</li>
+                <li>EcoLens: Photo-based soil and land analysis.</li>
+                <li>AI Carbon Belts: Smart CO₂ capture projects.</li>
+                <li>Carbon Tracker: Track emissions and reductions.</li>
+                <li>Eco-Challenges: Gamified community tasks.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 6: How It Works -->
+    <div class="slide">
+        <h2>⚙️ How It Works</h2>
+        <div class="content">
+            <ul>
+                <li>Upload land photo → EcoLens analysis.</li>
+                <li>Get AI-driven restoration plans.</li>
+                <li>Join AI Carbon Belt projects in your region.</li>
+                <li>Track global and personal eco-impact.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 7: Impact -->
+    <div class="slide">
+        <h2>🌎 Global Impact by 2050</h2>
+        <div class="split">
+            <div>
+                <p class="data-point">+30%</p>
+                <p>Soil health improvement.</p>
+            </div>
+            <div>
+                <p class="data-point">Millions</p>
+                <p>tons of CO₂ captured.</p>
+            </div>
+            <div>
+                <p class="data-point">100M+</p>
+                <p>citizens engaged in eco-actions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Work Plan -->
+    <div class="slide">
+        <h2>📅 Work Plan (Prototype)</h2>
+        <div class="content">
+            <ul>
+                <li>Week 1: Research & data collection.</li>
+                <li>Week 2: Build AI Chatbot & EcoLens prototype.</li>
+                <li>Week 3: Integrate AI Carbon Belts.</li>
+                <li>Week 4: Finalize and launch presentation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 9: Future Vision -->
+    <div class="slide">
+        <h2>🚀 Future Vision</h2>
+        <div class="content">
+            <ul>
+                <li>AI drones for large-scale soil scanning.</li>
+                <li>AR previews of green restoration.</li>
+                <li>Global EcoBot network with carbon credits.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 10: Call to Action -->
+    <div class="slide">
+        <h2>💡 Call to Action</h2>
+        <div class="content">
+            <p>"EcoBot 2050 isn’t just technology — it’s a movement."</p>
+            <p>"Together, we can turn pollution into restoration and give our planet a second chance."</p>
+            <p class="highlight">Join us in rebuilding the Earth — one action at a time.</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-buttons">
+        <button onclick="prevSlide()">⬅ Previous</button>
+        <button onclick="nextSlide()">Next ➡</button>
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    </script>
+</body>
+</html>
